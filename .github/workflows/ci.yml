@@ -36,7 +36,7 @@ jobs:
         push: true
         tags: |
           my-static-website-image:latest
-          your-dockerhub-username/my-static-website:${{ github.sha }}
+          ffzakarias/my-static-website:${{ github.sha }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
 
