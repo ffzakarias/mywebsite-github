@@ -36,7 +36,7 @@ jobs:
         push: true
         tags: |
           my-static-website-image:latest
-          ffzakarias/my-static-website:${{ github.sha }}
+          ffzakarias/myrepo${{ github.sha }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
 
