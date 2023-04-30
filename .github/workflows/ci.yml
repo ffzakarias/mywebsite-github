@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@ffzakarias 
-ffzakarias
-/
-mywebsite-github
-Public
-Cannot fork because you own this repository and are not a member of any organizations.
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Beta Try the new code view
-mywebsite-github/.github/workflows/ci.yml
-@ffzakarias
-ffzakarias Create ci.yml
-Latest commit 9b31076 yesterday
- History
- 1 contributor
-63 lines (52 sloc)  1.63 KB
- 
-
 name: CI Pipeline
 
 on:
