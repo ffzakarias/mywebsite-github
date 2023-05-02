@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: myrepo/mywebsite-github:latest
+        tags: ffzakarias/myrepo:latest
