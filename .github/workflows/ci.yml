@@ -35,18 +35,7 @@ jobs:
         context: .
         push: true
         tags: |
-          my-static-website-image:latest
-          ffzakarias/myrepo${{ github.sha }}
-        cache-from: type=local,src=/tmp/.buildx-cache
-        cache-to: type=local,dest=/tmp/.buildx-cache
-
-
-    - name: Build Docker image
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        push: false
-        tags: my-static-website-image:latest
+        ffzakarias/myrepo:latest${{ github.sha }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
 
@@ -54,6 +43,7 @@ jobs:
       run: |
         docker run -d --name my-static-website -p 8080:80 my-static-website-image:latest
         sleep 5
+
     - name: Test website
       run: |
         curl http://localhost:8080 | grep '<title>My Static Website</title>'
