@@ -34,12 +34,11 @@ jobs:
       with:
         context: .
         push: true
-        tags: |
-        ffzakarias/myrepo:latest
+        tags: ffzakarias/myrepo:my-static-website-image 
 
     - name: Run Docker container
       run: |
-        docker run -d --name my-static-website -p 8080:80 my-static-website-image:latest
+        docker run -d --name my-static-website -p 8080:80 my-static-website-image
         sleep 5
 
     - name: Test website
